@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>The requested page could not be found!</title>
+    <title>Test page</title>
     <style type="text/css">
         html,
         body,
@@ -45,23 +45,11 @@
 </head>
 
 <body>
-    <script>
-        var terms = {
-            "ru-RU": "Страница не найдена!",
-        };
-        document.addEventListener("DOMContentLoaded", function() {
-            var userLang = navigator.language || navigator.userLanguage;
-            if (terms.hasOwnProperty(userLang)) {
-                document.getElementById('content').innerHTML = terms[userLang];
-                document.title = terms[userLang];
-            }
-        });
-    </script>
     <div class="container">
-        <i class="big light icon">⛈</i>
-        <h2 id="content">The requested page could not be found!</h2>
+        <i class="big light icon">👑</i>
+        <h2 id="content">Test form</h2>
+        <iframe src="https://pxl.alexander-orlov.dev.altkraft.com/form?form=dJEVF4aCfssWQ2fyRnyDTdCz8PgShxJi8rk9zSDpBhj2qRSLx923XbNF4fnV3nKYyLbz6u2PMEgij">
     </div>
-    <!-- NG -->
 </body>
 
 </html>
