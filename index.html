@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>The requested page could not be found!</title>
+    <style type="text/css">
+        html,
+        body,
+        div,
+        h2 {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        .container {
+            color: #4e4e4e;
+            text-align: center;
+            padding-top: 40vh;
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        .icon {
+            text-decoration: none;
+            font-style: normal;
+        }
+
+        .big {
+            font-size: 4em;
+            line-height: 160%;
+        }
+
+        .light {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var terms = {
+            "ru-RU": "Страница не найдена!",
+        };
+        document.addEventListener("DOMContentLoaded", function() {
+            var userLang = navigator.language || navigator.userLanguage;
+            if (terms.hasOwnProperty(userLang)) {
+                document.getElementById('content').innerHTML = terms[userLang];
+                document.title = terms[userLang];
+            }
+        });
+    </script>
+    <div class="container">
+        <i class="big light icon">⛈</i>
+        <h2 id="content">The requested page could not be found!</h2>
+    </div>
+    <!-- NG -->
+</body>
+
+</html>
