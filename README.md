@@ -1,1 +1,0 @@
-# normiridium.github.io
